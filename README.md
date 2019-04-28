@@ -1,4 +1,4 @@
-# lesson_app
+# Lesson App
 
 A new Flutter project.
 
