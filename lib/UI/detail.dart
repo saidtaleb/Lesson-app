@@ -41,9 +41,11 @@ class DetailPage extends StatelessWidget {
           child: new Divider(color: Colors.green),
         ),
         SizedBox(height: 10.0),
-        Text(
-          lesson.title,
-          style: TextStyle(color: Colors.white, fontSize: 45.0),
+        Expanded(
+            child: Text(
+              lesson.title,
+              style: TextStyle(color: Colors.white, fontSize: 45.0),
+            ),
         ),
         SizedBox(height: 30.0),
         Row(
@@ -76,7 +78,7 @@ class DetailPage extends StatelessWidget {
               ),
             )),
         Container(
-          height: MediaQuery.of(context).size.height * 0.5,
+          height: MediaQuery.of(context).size.height * 0.55,
           padding: EdgeInsets.all(40.0),
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(color: Color.fromRGBO(58, 66, 86, .9)),
@@ -108,7 +110,7 @@ class DetailPage extends StatelessWidget {
           onPressed: () => {},
           color: Color.fromRGBO(58, 66, 86, 1.0),
           child:
-          Text("TAKE THIS LESSON", style: TextStyle(color: Colors.white)),
+              Text("TAKE THIS LESSON", style: TextStyle(color: Colors.white)),
         ));
     final bottomContent = Container(
       width: MediaQuery.of(context).size.width,
